@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShellDesk | Virtual remote desktop and graphical server management toolkit</title>
+    <meta
+      name="description"
+      content="ShellDesk brings SSH host management, remote terminals, SFTP, browser access, databases, and operations tools into one desktop-style workspace."
+    />
+    <meta name="theme-color" content="#070909" />
+    <meta property="og:title" content="ShellDesk" />
+    <meta
+      property="og:description"
+      content="Virtual remote desktop and graphical server management toolkit."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/shelldesk-screenshot-zh.png" />
+    <link rel="icon" type="image/png" href="/assets/shelldesk-icon.png" />
+    <link rel="apple-touch-icon" href="/assets/shelldesk-icon.png" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="ShellDesk home" data-i18n-aria-label="brand.home">
+        <img src="/assets/shelldesk-icon.png" alt="" />
+        <span>ShellDesk</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation" data-i18n-aria-label="nav.aria" data-nav>
+        <a href="#features" data-i18n="nav.features">Features</a>
+        <a href="#workspace" data-i18n="nav.workspace">Workspace</a>
+        <a href="#security" data-i18n="nav.security">Security</a>
+        <a href="#download" data-i18n="nav.download">Download</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="language-switch" role="group" aria-label="Language" data-i18n-aria-label="language.aria">
+          <button class="active" type="button" data-lang-option="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang-option="zh" aria-pressed="false">中文</button>
+        </div>
+        <a class="icon-button" href="https://github.com/liubaicai/ShellDesk" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-i18n-aria-label="menu.open" data-menu-button>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>ShellDesk</h1>
+          <p class="hero-line" data-i18n="hero.line">Virtual remote desktop and graphical server management toolkit</p>
+          <p class="hero-text">
+            <span data-i18n="hero.text">Manage SSH hosts, remote terminals, SFTP, browser access, databases, and operations tools in one desktop-style workspace, so teams switch less and solve more.</span>
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="https://github.com/liubaicai/ShellDesk/releases/latest" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14" />
+              </svg>
+              <span data-i18n="cta.download">Download latest release</span>
+            </a>
+            <a class="secondary-action" href="https://github.com/liubaicai/ShellDesk" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+              <span data-i18n="cta.github">View on GitHub</span>
+            </a>
+          </div>
+          <div class="platforms" aria-label="Supported platforms" data-i18n-aria-label="platforms.aria">
+            <span data-i18n="platforms.label">Supported platforms</span>
+            <strong>macOS</strong>
+            <strong>Windows</strong>
+            <strong>Linux</strong>
+          </div>
+        </div>
+
+        <div class="product-frame" aria-label="ShellDesk product screenshot" data-i18n-aria-label="product.aria">
+          <div class="frame-top">
+            <span></span>
+            <span></span>
+            <span></span>
+            <strong>root@192.168.100.23:22</strong>
+          </div>
+          <div class="screenshot-tabs" role="tablist" aria-label="Screenshot language" data-i18n-aria-label="screenshot.aria">
+            <button type="button" data-shot="zh" aria-selected="false" data-i18n="screenshot.zh">Chinese UI</button>
+            <button class="active" type="button" data-shot="en" aria-selected="true" data-i18n="screenshot.en">English UI</button>
+          </div>
+          <img
+            data-screenshot
+            src="/assets/shelldesk-screenshot-en.png"
+            alt="ShellDesk English interface screenshot showing remote desktop, terminal, browser and Dock"
+          />
+        </div>
+      </section>
+
+      <section class="metric-strip" aria-label="ShellDesk summary" data-i18n-aria-label="metrics.aria">
+        <div>
+          <strong>1</strong>
+          <span data-i18n="metrics.connection">connection window</span>
+        </div>
+        <div>
+          <strong>20+</strong>
+          <span data-i18n="metrics.tools">built-in operations tools</span>
+        </div>
+        <div>
+          <strong>5</strong>
+          <span data-i18n="metrics.databases">database types</span>
+        </div>
+        <div>
+          <strong>GPL-3.0</strong>
+          <span data-i18n="metrics.license">open-source license</span>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="section-heading">
+          <h2 data-i18n="features.title">One desktop for everyday server work</h2>
+          <p data-i18n="features.text">After connecting to a host, ShellDesk lets you open terminals, files, browsers, databases, and system tools like local desktop apps.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9l3 3-3 3m5 0h4" /></svg>
+            <h3 data-i18n="feature.terminal.title">Multi-session terminal</h3>
+            <p data-i18n="feature.terminal.text">xterm.js terminals support multiple sessions, themes, scrollback, copy/paste, and configurable fonts.</p>
+          </article>
+          <article class="feature-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h7l2 2h9v10H3zM7 13h10M7 16h7" /></svg>
+            <h3 data-i18n="feature.sftp.title">SFTP and remote editing</h3>
+            <p data-i18n="feature.sftp.text">Browse, upload, download, compress, extract, and edit remote configuration files in Notepad.</p>
+          </article>
+          <article class="feature-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18ZM3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" /></svg>
+            <h3 data-i18n="feature.browser.title">Private-network browser</h3>
+            <p data-i18n="feature.browser.text">Use the SSH SOCKS proxy to reach private remote services without managing a separate proxy setup.</p>
+          </article>
+          <article class="feature-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6c0-1.1 3.6-2 8-2s8 .9 8 2-3.6 2-8 2-8-.9-8-2Zm0 0v12c0 1.1 3.6 2 8 2s8-.9 8-2V6M4 12c0 1.1 3.6 2 8 2s8-.9 8-2" /></svg>
+            <h3 data-i18n="feature.database.title">Database panels</h3>
+            <p data-i18n="feature.database.text">Browse and query MySQL, PostgreSQL, MongoDB, Redis, and SQLite from the same workspace.</p>
+          </article>
+          <article class="feature-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5m4 14v-7m4 7V8m4 11v-4m4 4V4" /></svg>
+            <h3 data-i18n="feature.ops.title">System operations tools</h3>
+            <p data-i18n="feature.ops.text">Inspect processes, services, containers, ports, disks, logs, packages, and scheduled tasks.</p>
+          </article>
+          <article class="feature-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 7v5c0 4.5 3.4 7.8 8 9 4.6-1.2 8-4.5 8-9V7zM9 12l2 2 4-5" /></svg>
+            <h3 data-i18n="feature.security.title">Security audit</h3>
+            <p data-i18n="feature.security.text">Review logins, ports, firewall state, system settings, and host risks while keeping terminal fallback close.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="workspace-section" id="workspace">
+        <div class="workspace-copy">
+          <h2 data-i18n="workspace.title">Organize every task around one SSH connection</h2>
+          <p>
+            <span data-i18n="workspace.text">Each host opens in an independent connection window with the host and SOCKS port in the title bar. Desktop windows support drag, resize, maximize, minimize, z-order management, and Dock access.</span>
+          </p>
+          <ul class="check-list">
+            <li data-i18n="workspace.check.hosts">Host groups, tags, notes, and system type detection</li>
+            <li data-i18n="workspace.check.dock">File Manager, Terminal, and Browser pinned to the Dock</li>
+            <li data-i18n="workspace.check.layout">Custom desktop icon layout, folders, sorting, and wallpaper</li>
+          </ul>
+        </div>
+        <div class="workflow-panel">
+          <div class="workflow-step">
+            <span>01</span>
+            <strong data-i18n="workflow.connect.title">Connect to a host</strong>
+            <p data-i18n="workflow.connect.text">Read hosts, keys, and authentication settings from the local Vault.</p>
+          </div>
+          <div class="workflow-step">
+            <span>02</span>
+            <strong data-i18n="workflow.tools.title">Open tools</strong>
+            <p data-i18n="workflow.tools.text">Run terminals, files, databases, browser access, and system tools side by side.</p>
+          </div>
+          <div class="workflow-step">
+            <span>03</span>
+            <strong data-i18n="workflow.inspect.title">Inspect issues</strong>
+            <p data-i18n="workflow.inspect.text">Review monitoring, logs, ports, services, and security checks in one place.</p>
+          </div>
+          <div class="workflow-step">
+            <span>04</span>
+            <strong data-i18n="workflow.audit.title">Keep an audit trail</strong>
+            <p data-i18n="workflow.audit.text">Record connection, host, config, and system operations in local logs.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section security" id="security">
+        <div class="section-heading">
+          <h2 data-i18n="security.title">Local-first and controlled</h2>
+          <p data-i18n="security.text">ShellDesk stores hosts, keys, app settings, and bookmarks in a local Vault. The renderer process accesses controlled APIs through preload.</p>
+        </div>
+        <div class="security-layout">
+          <div class="vault-visual" aria-hidden="true">
+            <div class="vault-box">
+              <span class="vault-light"></span>
+              <svg viewBox="0 0 24 24">
+                <path d="M6 10V8a6 6 0 0 1 12 0v2m-13 0h14v10H5zM12 14v3" />
+              </svg>
+            </div>
+          </div>
+          <div class="security-points">
+            <article>
+              <strong data-i18n="security.safeStorage.title">System-backed encryption</strong>
+              <p data-i18n="security.safeStorage.text">When Electron safeStorage is available, sensitive data is encrypted with system credentials.</p>
+            </article>
+            <article>
+              <strong data-i18n="security.file.title">Local file protection</strong>
+              <p data-i18n="security.file.text">When system encryption is unavailable, the Vault falls back to local file-permission protection.</p>
+            </article>
+            <article>
+              <strong data-i18n="security.bridge.title">Controlled bridge APIs</strong>
+              <p data-i18n="security.bridge.text">ShellDesk enables contextIsolation, disables nodeIntegration, and exposes capabilities through preload.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="download-section" id="download">
+        <div>
+          <h2 data-i18n="download.title">Built for developers, operators, and technical teams</h2>
+          <p data-i18n="download.text">Keep the same experience on macOS, Windows, and Linux, and bring remote work into one desktop workspace.</p>
+        </div>
+        <div class="download-actions">
+          <a href="https://github.com/liubaicai/ShellDesk/releases/latest" target="_blank" rel="noreferrer" data-i18n="cta.download">Download latest release</a>
+          <a href="https://github.com/liubaicai/ShellDesk" target="_blank" rel="noreferrer" data-i18n="cta.source">View source</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 ShellDesk. GPL-3.0-only.</span>
+      <div>
+        <a href="https://github.com/liubaicai/ShellDesk/releases/latest" target="_blank" rel="noreferrer">Releases</a>
+        <a href="https://github.com/liubaicai/ShellDesk/issues" target="_blank" rel="noreferrer">Issues</a>
+        <a href="https://github.com/liubaicai/ShellDesk/blob/master/LICENSE" target="_blank" rel="noreferrer">License</a>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
