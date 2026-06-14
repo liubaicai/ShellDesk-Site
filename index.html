@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ShellDesk | Virtual remote desktop and graphical server management toolkit</title>
+    <title>ShellDesk | Visual SSH host workspace and remote operations toolkit</title>
     <meta
       name="description"
-      content="ShellDesk brings SSH host management, remote terminals, SFTP, browser access, databases, and operations tools into one desktop-style workspace."
+      content="ShellDesk brings SSH host management, card and list views, remote terminals, SFTP, databases, local mode, and operations tools into one desktop workspace."
     />
     <meta name="theme-color" content="#070909" />
     <meta property="og:title" content="ShellDesk" />
     <meta
       property="og:description"
-      content="Virtual remote desktop and graphical server management toolkit."
+      content="Visual SSH host workspace and remote operations toolkit."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/assets/shelldesk-screenshot-zh.png" />
+    <meta property="og:image" content="/assets/shelldesk-host-cards.png" />
     <link rel="icon" type="image/png" href="/assets/shelldesk-icon.png" />
     <link rel="apple-touch-icon" href="/assets/shelldesk-icon.png" />
     <link rel="stylesheet" href="/src/styles.css" />
@@ -57,9 +57,9 @@
       <section class="hero">
         <div class="hero-copy">
           <h1>ShellDesk</h1>
-          <p class="hero-line" data-i18n="hero.line">Virtual remote desktop and graphical server management toolkit</p>
+          <p class="hero-line" data-i18n="hero.line">Visual SSH host workspace and remote operations toolkit</p>
           <p class="hero-text">
-            <span data-i18n="hero.text">Manage SSH hosts, remote terminals, SFTP, browser access, databases, and operations tools in one desktop-style workspace, so teams switch less and solve more.</span>
+            <span data-i18n="hero.text">Organize SSH hosts with card and list views, colored groups and tags, recent-connection sorting, local mode, snippets, keys, proxies, logs, and a full remote workbench.</span>
           </p>
           <div class="hero-actions">
             <a class="primary-action" href="https://github.com/liubaicai/ShellDesk/releases/latest" target="_blank" rel="noreferrer">
@@ -88,32 +88,32 @@
             <span></span>
             <span></span>
             <span></span>
-            <strong>root@192.168.100.23:22</strong>
+            <strong data-i18n="frame.title">Host workspace · cards and lists</strong>
           </div>
-          <div class="screenshot-tabs" role="tablist" aria-label="Screenshot language" data-i18n-aria-label="screenshot.aria">
-            <button type="button" data-shot="zh" aria-selected="false" data-i18n="screenshot.zh">Chinese UI</button>
-            <button class="active" type="button" data-shot="en" aria-selected="true" data-i18n="screenshot.en">English UI</button>
+          <div class="screenshot-tabs" role="tablist" aria-label="Screenshot view" data-i18n-aria-label="screenshot.aria">
+            <button class="active" type="button" data-shot="cards" aria-selected="true" data-i18n="screenshot.cards">Card view</button>
+            <button type="button" data-shot="list" aria-selected="false" data-i18n="screenshot.list">List view</button>
           </div>
           <img
             data-screenshot
-            src="/assets/shelldesk-screenshot-en.png"
-            alt="ShellDesk English interface screenshot showing remote desktop, terminal, browser and Dock"
+            src="/assets/shelldesk-host-cards.png"
+            alt="ShellDesk host workspace showing card view, filters, host details, and remote workbench actions"
           />
         </div>
       </section>
 
       <section class="metric-strip" aria-label="ShellDesk summary" data-i18n-aria-label="metrics.aria">
         <div>
-          <strong>1</strong>
-          <span data-i18n="metrics.connection">connection window</span>
+          <strong>2</strong>
+          <span data-i18n="metrics.views">host views</span>
         </div>
         <div>
-          <strong>20+</strong>
+          <strong>25+</strong>
           <span data-i18n="metrics.tools">built-in operations tools</span>
         </div>
         <div>
-          <strong>5</strong>
-          <span data-i18n="metrics.databases">database types</span>
+          <strong>Local</strong>
+          <span data-i18n="metrics.local">local workbench mode</span>
         </div>
         <div>
           <strong>GPL-3.0</strong>
@@ -123,65 +123,65 @@
 
       <section class="section" id="features">
         <div class="section-heading">
-          <h2 data-i18n="features.title">One desktop for everyday server work</h2>
-          <p data-i18n="features.text">After connecting to a host, ShellDesk lets you open terminals, files, browsers, databases, and system tools like local desktop apps.</p>
+          <h2 data-i18n="features.title">A calmer home for every SSH host</h2>
+          <p data-i18n="features.text">The redesigned home screen keeps hosts, snippets, keys, known hosts, proxies, logs, and settings in one compact operations console.</p>
         </div>
         <div class="feature-grid">
           <article class="feature-card">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9l3 3-3 3m5 0h4" /></svg>
-            <h3 data-i18n="feature.terminal.title">Multi-session terminal</h3>
-            <p data-i18n="feature.terminal.text">xterm.js terminals support multiple sessions, themes, scrollback, copy/paste, and configurable fonts.</p>
+            <h3 data-i18n="feature.hosts.title">Card and list host views</h3>
+            <p data-i18n="feature.hosts.text">Switch between dense tables and scannable cards, with pinned actions, sticky headers, and selection details.</p>
           </article>
           <article class="feature-card">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h7l2 2h9v10H3zM7 13h10M7 16h7" /></svg>
-            <h3 data-i18n="feature.sftp.title">SFTP and remote editing</h3>
-            <p data-i18n="feature.sftp.text">Browse, upload, download, compress, extract, and edit remote configuration files in Notepad.</p>
+            <h3 data-i18n="feature.tags.title">Color-coded groups and tags</h3>
+            <p data-i18n="feature.tags.text">Groups and tags use stable colors, making production, staging, network, backup, and custom labels easier to scan.</p>
           </article>
           <article class="feature-card">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18ZM3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" /></svg>
-            <h3 data-i18n="feature.browser.title">Private-network browser</h3>
-            <p data-i18n="feature.browser.text">Use the SSH SOCKS proxy to reach private remote services without managing a separate proxy setup.</p>
+            <h3 data-i18n="feature.sort.title">Recent connection sorting</h3>
+            <p data-i18n="feature.sort.text">Bring frequently used hosts to the front with recent-connection sorting alongside name, address, created, and updated order.</p>
           </article>
           <article class="feature-card">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6c0-1.1 3.6-2 8-2s8 .9 8 2-3.6 2-8 2-8-.9-8-2Zm0 0v12c0 1.1 3.6 2 8 2s8-.9 8-2V6M4 12c0 1.1 3.6 2 8 2s8-.9 8-2" /></svg>
-            <h3 data-i18n="feature.database.title">Database panels</h3>
-            <p data-i18n="feature.database.text">Browse and query MySQL, PostgreSQL, MongoDB, Redis, and SQLite from the same workspace.</p>
+            <h3 data-i18n="feature.workbench.title">Open the workbench</h3>
+            <p data-i18n="feature.workbench.text">Jump from any host into the remote workbench for terminals, files, browsers, databases, monitors, services, and more.</p>
           </article>
           <article class="feature-card">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5m4 14v-7m4 7V8m4 11v-4m4 4V4" /></svg>
-            <h3 data-i18n="feature.ops.title">System operations tools</h3>
-            <p data-i18n="feature.ops.text">Inspect processes, services, containers, ports, disks, logs, packages, and scheduled tasks.</p>
+            <h3 data-i18n="feature.inventory.title">Host inventory details</h3>
+            <p data-i18n="feature.inventory.text">Connection success collects system, kernel, CPU, memory, disk summary, login method, key pair, and proxy metadata.</p>
           </article>
           <article class="feature-card">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 7v5c0 4.5 3.4 7.8 8 9 4.6-1.2 8-4.5 8-9V7zM9 12l2 2 4-5" /></svg>
-            <h3 data-i18n="feature.security.title">Security audit</h3>
-            <p data-i18n="feature.security.text">Review logins, ports, firewall state, system settings, and host risks while keeping terminal fallback close.</p>
+            <h3 data-i18n="feature.storage.title">Snippets, keys, proxies, logs</h3>
+            <p data-i18n="feature.storage.text">Manage reusable commands, SSH key pairs, known hosts, proxy profiles, and local operation logs with the same card UI.</p>
           </article>
         </div>
       </section>
 
       <section class="workspace-section" id="workspace">
         <div class="workspace-copy">
-          <h2 data-i18n="workspace.title">Organize every task around one SSH connection</h2>
+          <h2 data-i18n="workspace.title">Move from inventory to workbench without losing context</h2>
           <p>
-            <span data-i18n="workspace.text">Each host opens in an independent connection window with the host and SOCKS port in the title bar. Desktop windows support drag, resize, maximize, minimize, z-order management, and Dock access.</span>
+            <span data-i18n="workspace.text">Start on the host dashboard, connect with saved credentials or a typed SSH command, then open a focused desktop-style workbench for that machine.</span>
           </p>
           <ul class="check-list">
-            <li data-i18n="workspace.check.hosts">Host groups, tags, notes, and system type detection</li>
-            <li data-i18n="workspace.check.dock">File Manager, Terminal, and Browser pinned to the Dock</li>
-            <li data-i18n="workspace.check.layout">Custom desktop icon layout, folders, sorting, and wallpaper</li>
+            <li data-i18n="workspace.check.hosts">Hosts, snippets, keys, known hosts, proxies, logs, and settings share one navigation model</li>
+            <li data-i18n="workspace.check.details">Right-side host details show connection, system, login, key, and proxy context</li>
+            <li data-i18n="workspace.check.local">Local mode opens a local workbench beside remote SSH hosts</li>
           </ul>
         </div>
         <div class="workflow-panel">
           <div class="workflow-step">
             <span>01</span>
-            <strong data-i18n="workflow.connect.title">Connect to a host</strong>
-            <p data-i18n="workflow.connect.text">Read hosts, keys, and authentication settings from the local Vault.</p>
+            <strong data-i18n="workflow.connect.title">Choose a host</strong>
+            <p data-i18n="workflow.connect.text">Filter by search, group, tags, state, and sorting, then select the host you need.</p>
           </div>
           <div class="workflow-step">
             <span>02</span>
-            <strong data-i18n="workflow.tools.title">Open tools</strong>
-            <p data-i18n="workflow.tools.text">Run terminals, files, databases, browser access, and system tools side by side.</p>
+            <strong data-i18n="workflow.tools.title">Open the workbench</strong>
+            <p data-i18n="workflow.tools.text">Use saved keys, passwords, proxies, or a one-line SSH command to enter the workspace.</p>
           </div>
           <div class="workflow-step">
             <span>03</span>

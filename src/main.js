@@ -10,10 +10,10 @@ const ogDescriptionMeta = document.querySelector('meta[property="og:description"
 const translations = {
   en: {
     meta: {
-      title: "ShellDesk | Virtual remote desktop and graphical server management toolkit",
+      title: "ShellDesk | Visual SSH host workspace and remote operations toolkit",
       description:
-        "ShellDesk brings SSH host management, remote terminals, SFTP, browser access, databases, and operations tools into one desktop-style workspace.",
-      ogDescription: "Virtual remote desktop and graphical server management toolkit.",
+        "ShellDesk brings SSH host management, card and list views, remote terminals, SFTP, databases, local mode, and operations tools into one desktop workspace.",
+      ogDescription: "Visual SSH host workspace and remote operations toolkit.",
     },
     brand: {
       home: "ShellDesk home",
@@ -32,9 +32,9 @@ const translations = {
       open: "Open menu",
     },
     hero: {
-      line: "Virtual remote desktop and graphical server management toolkit",
+      line: "Visual SSH host workspace and remote operations toolkit",
       text:
-        "Manage SSH hosts, remote terminals, SFTP, browser access, databases, and operations tools in one desktop-style workspace, so teams switch less and solve more.",
+        "Organize SSH hosts with card and list views, colored groups and tags, recent-connection sorting, local mode, snippets, keys, proxies, logs, and a full remote workbench.",
     },
     cta: {
       download: "Download latest release",
@@ -48,70 +48,76 @@ const translations = {
     product: {
       aria: "ShellDesk product screenshot",
     },
+    frame: {
+      title: "Host workspace · cards and lists",
+    },
     screenshot: {
-      aria: "Screenshot language",
-      zh: "Chinese UI",
-      en: "English UI",
+      aria: "Screenshot view",
+      cards: "Card view",
+      list: "List view",
     },
     metrics: {
       aria: "ShellDesk summary",
-      connection: "connection window",
+      views: "host views",
       tools: "built-in operations tools",
-      databases: "database types",
+      local: "local workbench mode",
       license: "open-source license",
     },
     features: {
-      title: "One desktop for everyday server work",
+      title: "A calmer home for every SSH host",
       text:
-        "After connecting to a host, ShellDesk lets you open terminals, files, browsers, databases, and system tools like local desktop apps.",
+        "The redesigned home screen keeps hosts, snippets, keys, known hosts, proxies, logs, and settings in one compact operations console.",
     },
     feature: {
-      terminal: {
-        title: "Multi-session terminal",
+      hosts: {
+        title: "Card and list host views",
         text:
-          "xterm.js terminals support multiple sessions, themes, scrollback, copy/paste, and configurable fonts.",
+          "Switch between dense tables and scannable cards, with pinned actions, sticky headers, and selection details.",
       },
-      sftp: {
-        title: "SFTP and remote editing",
-        text: "Browse, upload, download, compress, extract, and edit remote configuration files in Notepad.",
-      },
-      browser: {
-        title: "Private-network browser",
+      tags: {
+        title: "Color-coded groups and tags",
         text:
-          "Use the SSH SOCKS proxy to reach private remote services without managing a separate proxy setup.",
+          "Groups and tags use stable colors, making production, staging, network, backup, and custom labels easier to scan.",
       },
-      database: {
-        title: "Database panels",
-        text: "Browse and query MySQL, PostgreSQL, MongoDB, Redis, and SQLite from the same workspace.",
-      },
-      ops: {
-        title: "System operations tools",
-        text: "Inspect processes, services, containers, ports, disks, logs, packages, and scheduled tasks.",
-      },
-      security: {
-        title: "Security audit",
+      sort: {
+        title: "Recent connection sorting",
         text:
-          "Review logins, ports, firewall state, system settings, and host risks while keeping terminal fallback close.",
+          "Bring frequently used hosts to the front with recent-connection sorting alongside name, address, created, and updated order.",
+      },
+      workbench: {
+        title: "Open the workbench",
+        text:
+          "Jump from any host into the remote workbench for terminals, files, browsers, databases, monitors, services, and more.",
+      },
+      inventory: {
+        title: "Host inventory details",
+        text:
+          "Connection success collects system, kernel, CPU, memory, disk summary, login method, key pair, and proxy metadata.",
+      },
+      storage: {
+        title: "Snippets, keys, proxies, logs",
+        text:
+          "Manage reusable commands, SSH key pairs, known hosts, proxy profiles, and local operation logs with the same card UI.",
       },
     },
     workspace: {
-      title: "Organize every task around one SSH connection",
+      title: "Move from inventory to workbench without losing context",
       text:
-        "Each host opens in an independent connection window with the host and SOCKS port in the title bar. Desktop windows support drag, resize, maximize, minimize, z-order management, and Dock access.",
+        "Start on the host dashboard, connect with saved credentials or a typed SSH command, then open a focused desktop-style workbench for that machine.",
       check: {
-        hosts: "Host groups, tags, notes, and system type detection",
-        dock: "File Manager, Terminal, and Browser pinned to the Dock",
-        layout: "Custom desktop icon layout, folders, sorting, and wallpaper",
+        hosts: "Hosts, snippets, keys, known hosts, proxies, logs, and settings share one navigation model",
+        details: "Right-side host details show connection, system, login, key, and proxy context",
+        local: "Local mode opens a local workbench beside remote SSH hosts",
       },
     },
     workflow: {
       connect: {
-        title: "Connect to a host",
-        text: "Read hosts, keys, and authentication settings from the local Vault.",
+        title: "Choose a host",
+        text: "Filter by search, group, tags, state, and sorting, then select the host you need.",
       },
       tools: {
-        title: "Open tools",
-        text: "Run terminals, files, databases, browser access, and system tools side by side.",
+        title: "Open the workbench",
+        text: "Use saved keys, passwords, proxies, or a one-line SSH command to enter the workspace.",
       },
       inspect: {
         title: "Inspect issues",
@@ -148,10 +154,10 @@ const translations = {
   },
   zh: {
     meta: {
-      title: "ShellDesk | 虚拟远程桌面与图形化服务器管理工具",
+      title: "ShellDesk | 可视化 SSH 主机工作台与远程运维工具",
       description:
-        "ShellDesk 把 SSH 主机管理、远程终端、SFTP、浏览器、数据库和系统运维工具收进一个桌面式工作区。",
-      ogDescription: "虚拟远程桌面与图形化服务器管理工具。",
+        "ShellDesk 把 SSH 主机管理、卡片和列表视图、远程终端、SFTP、数据库、本地模式和运维工具收进一个桌面工作区。",
+      ogDescription: "可视化 SSH 主机工作台与远程运维工具。",
     },
     brand: {
       home: "ShellDesk 首页",
@@ -170,9 +176,9 @@ const translations = {
       open: "打开菜单",
     },
     hero: {
-      line: "虚拟远程桌面与图形化服务器管理工具",
+      line: "可视化 SSH 主机工作台与远程运维工具",
       text:
-        "在一个桌面式工作区中管理 SSH 主机、远程终端、SFTP、浏览器、数据库和系统运维工具，让开发与运维团队少切换窗口，多处理问题。",
+        "用卡片和列表视图管理 SSH 主机，结合彩色分组标签、最近连接排序、本地模式、代码片段、密钥、代理、日志和完整远程工作台。",
     },
     cta: {
       download: "下载最新版本",
@@ -186,66 +192,69 @@ const translations = {
     product: {
       aria: "ShellDesk 产品截图",
     },
+    frame: {
+      title: "主机工作台 · 卡片和列表",
+    },
     screenshot: {
-      aria: "截图语言切换",
-      zh: "中文界面",
-      en: "English UI",
+      aria: "截图视图切换",
+      cards: "卡片视图",
+      list: "列表视图",
     },
     metrics: {
       aria: "ShellDesk 摘要",
-      connection: "连接窗口",
+      views: "主机视图",
       tools: "内置运维工具",
-      databases: "数据库类型",
+      local: "本地工作台模式",
       license: "开源协议",
     },
     features: {
-      title: "把常用服务器工具收进一个桌面",
-      text: "连接主机后，ShellDesk 让你像使用本地桌面一样打开终端、文件、浏览器、数据库和系统工具。",
+      title: "让每台 SSH 主机都有清晰入口",
+      text: "新版首页把主机、代码片段、密钥对、已知主机、代理、日志和设置收进一个紧凑的运维控制台。",
     },
     feature: {
-      terminal: {
-        title: "多标签终端",
-        text: "xterm.js 终端支持多会话、主题、滚动缓冲、复制粘贴和可配置字体。",
+      hosts: {
+        title: "卡片和列表主机视图",
+        text: "在高密度表格和可扫描卡片之间切换，保留固定操作列、表头吸附和右侧详情。",
       },
-      sftp: {
-        title: "SFTP 与远程编辑",
-        text: "浏览、上传、下载、压缩、解压，并用远程记事本处理配置文件。",
+      tags: {
+        title: "分组和标签彩色区分",
+        text: "分组和标签会稳定映射到不同颜色，生产、测试、网络、备份等标记更容易扫读。",
       },
-      browser: {
-        title: "内网浏览器",
-        text: "基于 SSH SOCKS 代理访问远程私网服务，减少单独配置代理的成本。",
+      sort: {
+        title: "按最近连接排序",
+        text: "常用主机可以按最近连接时间排到前面，也支持名称、地址、创建时间和更新时间排序。",
       },
-      database: {
-        title: "数据库面板",
-        text: "覆盖 MySQL、PostgreSQL、MongoDB、Redis、SQLite 的浏览和查询。",
+      workbench: {
+        title: "打开工作台",
+        text: "从任意主机进入远程工作台，使用终端、文件、浏览器、数据库、监控、服务等工具。",
       },
-      ops: {
-        title: "系统运维工具",
-        text: "进程、服务、容器、端口、磁盘、日志、包管理、计划任务集中处理。",
+      inventory: {
+        title: "主机资产信息",
+        text: "连接成功后自动采集系统、内核、CPU、内存、磁盘摘要、登录方式、密钥和代理信息。",
       },
-      security: {
-        title: "安全巡检",
-        text: "查看登录、端口、防火墙、系统配置和主机风险，保留命令行兜底。",
+      storage: {
+        title: "片段、密钥、代理、日志",
+        text: "代码片段、SSH 密钥对、已知主机、代理配置和本地日志使用统一卡片式界面管理。",
       },
     },
     workspace: {
-      title: "围绕一次 SSH 连接组织所有工作",
+      title: "从主机资产直接进入远程工作台",
       text:
-        "每台主机打开独立连接窗口，标题栏显示当前主机和 SOCKS 端口；桌面窗口支持拖拽、缩放、最大化、最小化、层级管理和 Dock。",
+        "先在主机首页筛选和查看上下文，再用保存凭据或一行 SSH 命令进入这台机器的桌面式工作台。",
       check: {
-        hosts: "主机分组、标签、备注、系统类型识别",
-        dock: "文件管理、终端、浏览器固定在 Dock",
-        layout: "桌面图标布局、文件夹、排序和壁纸可自定义",
+        hosts: "主机、代码片段、密钥、已知主机、代理、日志、设置共用同一导航",
+        details: "右侧详情展示连接、系统、登录方式、密钥和代理上下文",
+        local: "本地模式可以像远程 SSH 主机一样打开本地工作台",
       },
     },
     workflow: {
       connect: {
-        title: "连接主机",
-        text: "从本地 Vault 读取主机、密钥和认证方式。",
+        title: "选择主机",
+        text: "通过搜索、分组、标签、状态和排序快速定位目标主机。",
       },
       tools: {
-        title: "打开工具",
-        text: "终端、文件、数据库、浏览器和系统工具并行处理。",
+        title: "打开工作台",
+        text: "使用已保存密钥、密码、代理，或一行 SSH 命令进入工作区。",
       },
       inspect: {
         title: "定位问题",
@@ -280,13 +289,13 @@ const translations = {
 };
 
 const screenshots = {
-  zh: {
-    src: "/assets/shelldesk-screenshot-zh.png",
-    alt: "ShellDesk 中文界面截图，显示远程桌面、终端、浏览器和 Dock",
+  cards: {
+    src: "/assets/shelldesk-host-cards.png",
+    alt: "ShellDesk host workspace showing card view, filters, host details, and remote workbench actions",
   },
-  en: {
-    src: "/assets/shelldesk-screenshot-en.png",
-    alt: "ShellDesk English interface screenshot showing remote desktop, terminal, browser and dock",
+  list: {
+    src: "/assets/shelldesk-host-list.png",
+    alt: "ShellDesk host workspace showing list view, colored group tags, last connection, and host details",
   },
 };
 
@@ -341,7 +350,8 @@ function applyLanguage(language, { syncScreenshot = true } = {}) {
   });
 
   if (syncScreenshot) {
-    setScreenshot(normalized);
+    const activeShot = document.querySelector("[data-shot].active")?.dataset.shot ?? "cards";
+    setScreenshot(activeShot);
   }
 }
 

@@ -127,6 +127,8 @@ vercel
 ## 资源说明
 
 - `public/assets/shelldesk-icon.png`：ShellDesk 应用图标
+- `public/assets/shelldesk-host-cards.png`：新版主机首页卡片视图截图
+- `public/assets/shelldesk-host-list.png`：新版主机首页列表视图截图
 - `public/assets/shelldesk-screenshot-zh.png`：中文界面截图
 - `public/assets/shelldesk-screenshot-en.png`：英文界面截图
 - `docs/design/shelldesk-site-concept.png`：站点视觉概念图
