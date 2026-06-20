@@ -2,9 +2,9 @@
 
 ShellDesk Site 是 ShellDesk 的静态产品官网，用于介绍 ShellDesk 的产品定位、核心功能、截图展示和下载入口。站点基于 Vite 构建，可直接部署到 Vercel。
 
-ShellDesk 是一个虚拟远程桌面与图形化服务器管理工具，把 SSH 主机管理、远程终端、SFTP、浏览器、数据库和系统运维工具收进一个桌面式工作区。
+ShellDesk 是一个基于 Tauri 2、Rust、React 19 和 TypeScript 的虚拟远程桌面与图形化服务器管理工具，把 SSH 和本地连接、终端、SFTP、浏览器、VNC、数据库、WebDAV 同步和系统运维工具收进一个桌面式工作区。
 
-站点默认使用英文内容，右上角提供 `EN / 中文` 切换，并会记住用户选择的语言。
+站点默认使用英文内容，右上角提供 `EN / 中文` 切换，并会记住用户选择的语言。更新 ShellDesk 主仓库 README 后，应同步检查这里的首页文案、功能卡片、指标数字和安全模型描述，避免官网仍展示旧的 Electron 或过期功能信息。
 
 ## 项目结构
 
@@ -23,7 +23,7 @@ ShellDeskSite/
 
 ## 本地开发
 
-需要 Node.js 20 或更高版本，推荐使用 pnpm。
+需要 Node.js 20 或更高版本，推荐使用 pnpm 10 或更高版本。
 
 ```bash
 pnpm install

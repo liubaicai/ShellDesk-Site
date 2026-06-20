@@ -6,7 +6,7 @@
     <title>ShellDesk | Visual SSH host workspace and remote operations toolkit</title>
     <meta
       name="description"
-      content="ShellDesk brings SSH host management, card and list views, remote terminals, SFTP, databases, local mode, and operations tools into one desktop workspace."
+      content="ShellDesk brings SSH and local host management, card and list views, terminals, SFTP, browser and VNC access, databases, WebDAV sync, and operations tools into one desktop workspace."
     />
     <meta name="theme-color" content="#070909" />
     <meta property="og:title" content="ShellDesk" />
@@ -59,7 +59,7 @@
           <h1>ShellDesk</h1>
           <p class="hero-line" data-i18n="hero.line">Visual SSH host workspace and remote operations toolkit</p>
           <p class="hero-text">
-            <span data-i18n="hero.text">Organize SSH hosts with card and list views, colored groups and tags, recent-connection sorting, local mode, snippets, keys, proxies, logs, and a full remote workbench.</span>
+            <span data-i18n="hero.text">Organize SSH hosts with card and list views, colored groups and tags, recent-connection sorting, local mode, snippets, keys, proxies, logs, VNC, databases, WebDAV sync, and a full remote workbench.</span>
           </p>
           <div class="hero-actions">
             <a class="primary-action" href="https://github.com/liubaicai/ShellDesk/releases/latest" target="_blank" rel="noreferrer">
@@ -108,12 +108,12 @@
           <span data-i18n="metrics.views">host views</span>
         </div>
         <div>
-          <strong>25+</strong>
-          <span data-i18n="metrics.tools">built-in operations tools</span>
+          <strong>36</strong>
+          <span data-i18n="metrics.tools">built-in desktop apps</span>
         </div>
         <div>
-          <strong>Local</strong>
-          <span data-i18n="metrics.local">local workbench mode</span>
+          <strong>6</strong>
+          <span data-i18n="metrics.databases">database types</span>
         </div>
         <div>
           <strong>GPL-3.0</strong>
@@ -124,7 +124,7 @@
       <section class="section" id="features">
         <div class="section-heading">
           <h2 data-i18n="features.title">A calmer home for every SSH host</h2>
-          <p data-i18n="features.text">The redesigned home screen keeps hosts, snippets, keys, known hosts, proxies, logs, and settings in one compact operations console.</p>
+          <p data-i18n="features.text">The redesigned home screen keeps hosts, snippets, keys, known hosts, proxies, logs, settings, and the full SSH or local workbench in one compact operations console.</p>
         </div>
         <div class="feature-grid">
           <article class="feature-card">
@@ -139,18 +139,18 @@
           </article>
           <article class="feature-card">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18ZM3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" /></svg>
-            <h3 data-i18n="feature.sort.title">Recent connection sorting</h3>
-            <p data-i18n="feature.sort.text">Bring frequently used hosts to the front with recent-connection sorting alongside name, address, created, and updated order.</p>
+            <h3 data-i18n="feature.browser.title">Browser and VNC access</h3>
+            <p data-i18n="feature.browser.text">Use the SSH SOCKS proxy, Tauri browser proxy, and noVNC viewer to reach private web services and remote desktops.</p>
           </article>
           <article class="feature-card">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6c0-1.1 3.6-2 8-2s8 .9 8 2-3.6 2-8 2-8-.9-8-2Zm0 0v12c0 1.1 3.6 2 8 2s8-.9 8-2V6M4 12c0 1.1 3.6 2 8 2s8-.9 8-2" /></svg>
-            <h3 data-i18n="feature.workbench.title">Open the workbench</h3>
-            <p data-i18n="feature.workbench.text">Jump from any host into the remote workbench for terminals, files, browsers, databases, monitors, services, and more.</p>
+            <h3 data-i18n="feature.database.title">Database panels</h3>
+            <p data-i18n="feature.database.text">Browse and query MySQL, PostgreSQL, ClickHouse, MongoDB, Redis, and SQLite from the same workspace.</p>
           </article>
           <article class="feature-card">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5m4 14v-7m4 7V8m4 11v-4m4 4V4" /></svg>
-            <h3 data-i18n="feature.inventory.title">Host inventory details</h3>
-            <p data-i18n="feature.inventory.text">Connection success collects system, kernel, CPU, memory, disk summary, login method, key pair, and proxy metadata.</p>
+            <h3 data-i18n="feature.ops.title">System operations tools</h3>
+            <p data-i18n="feature.ops.text">Inspect processes, services, containers, ports, disks, logs, packages, Git repositories, web servers, S3 buckets, search clusters, and message queues.</p>
           </article>
           <article class="feature-card">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 7v5c0 4.5 3.4 7.8 8 9 4.6-1.2 8-4.5 8-9V7zM9 12l2 2 4-5" /></svg>
@@ -162,14 +162,14 @@
 
       <section class="workspace-section" id="workspace">
         <div class="workspace-copy">
-          <h2 data-i18n="workspace.title">Move from inventory to workbench without losing context</h2>
+          <h2 data-i18n="workspace.title">Move from host inventory to SSH or local workbench</h2>
           <p>
-            <span data-i18n="workspace.text">Start on the host dashboard, connect with saved credentials or a typed SSH command, then open a focused desktop-style workbench for that machine.</span>
+            <span data-i18n="workspace.text">Start on the host dashboard, connect with saved credentials or a typed SSH command, then open a focused desktop-style workbench for that SSH host or local machine.</span>
           </p>
           <ul class="check-list">
             <li data-i18n="workspace.check.hosts">Hosts, snippets, keys, known hosts, proxies, logs, and settings share one navigation model</li>
             <li data-i18n="workspace.check.details">Right-side host details show connection, system, login, key, and proxy context</li>
-            <li data-i18n="workspace.check.local">Local mode opens a local workbench beside remote SSH hosts</li>
+            <li data-i18n="workspace.check.local">Local mode, Browser, VNC, files, terminals, and database panels use the same Dock workflow</li>
           </ul>
         </div>
         <div class="workflow-panel">
@@ -181,7 +181,7 @@
           <div class="workflow-step">
             <span>02</span>
             <strong data-i18n="workflow.tools.title">Open the workbench</strong>
-            <p data-i18n="workflow.tools.text">Use saved keys, passwords, proxies, or a one-line SSH command to enter the workspace.</p>
+            <p data-i18n="workflow.tools.text">Use saved keys, passwords, proxies, local profiles, or a one-line SSH command to enter the workspace.</p>
           </div>
           <div class="workflow-step">
             <span>03</span>
@@ -190,8 +190,8 @@
           </div>
           <div class="workflow-step">
             <span>04</span>
-            <strong data-i18n="workflow.audit.title">Keep an audit trail</strong>
-            <p data-i18n="workflow.audit.text">Record connection, host, config, and system operations in local logs.</p>
+            <strong data-i18n="workflow.audit.title">Sync and audit</strong>
+            <p data-i18n="workflow.audit.text">Record connection, host, config, and system operations in local logs, then back up the Vault with WebDAV when configured.</p>
           </div>
         </div>
       </section>
@@ -199,7 +199,7 @@
       <section class="section security" id="security">
         <div class="section-heading">
           <h2 data-i18n="security.title">Local-first and controlled</h2>
-          <p data-i18n="security.text">ShellDesk stores hosts, keys, app settings, and bookmarks in a local Vault. The renderer process accesses controlled APIs through preload.</p>
+          <p data-i18n="security.text">ShellDesk stores hosts, keys, app settings, and bookmarks in a local Vault. The React renderer reaches the Rust backend through the controlled window.guiSSH Tauri bridge.</p>
         </div>
         <div class="security-layout">
           <div class="vault-visual" aria-hidden="true">
@@ -212,16 +212,16 @@
           </div>
           <div class="security-points">
             <article>
-              <strong data-i18n="security.safeStorage.title">System-backed encryption</strong>
-              <p data-i18n="security.safeStorage.text">When Electron safeStorage is available, sensitive data is encrypted with system credentials.</p>
+              <strong data-i18n="security.encryption.title">System-backed encryption</strong>
+              <p data-i18n="security.encryption.text">When platform support is available, sensitive data is encrypted with system credentials.</p>
             </article>
             <article>
               <strong data-i18n="security.file.title">Local file protection</strong>
               <p data-i18n="security.file.text">When system encryption is unavailable, the Vault falls back to local file-permission protection.</p>
             </article>
             <article>
-              <strong data-i18n="security.bridge.title">Controlled bridge APIs</strong>
-              <p data-i18n="security.bridge.text">ShellDesk enables contextIsolation, disables nodeIntegration, and exposes capabilities through preload.</p>
+              <strong data-i18n="security.bridge.title">Controlled Tauri bridge</strong>
+              <p data-i18n="security.bridge.text">The renderer uses typed bridge APIs instead of direct backend access, keeping privileged work inside Rust commands.</p>
             </article>
           </div>
         </div>
